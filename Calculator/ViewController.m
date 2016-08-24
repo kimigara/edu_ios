@@ -30,13 +30,15 @@ typedef enum opr Operator;
     UIButton *btn = (UIButton *)sender;
     int value = (int)btn.tag;
     
-    if(currentOpr == none){
-        currentValue = currentValue * 10 + value;
-    }
-    else{
-        currentValue = value;
-        
-    }
+    currentValue = currentValue * 10 + value;
+
+//    if(currentOpr == none){
+//        currentValue = currentValue * 10 + value;
+//    }
+//    else{
+//        currentValue = value;
+//       
+//    }
     
     self.myLabel.text = [NSString stringWithFormat:@"%d",currentValue];
     
@@ -65,7 +67,7 @@ typedef enum opr Operator;
 //    }
    
     [calc setAccumulator:currentValue];
-    
+    currentValue=0;
     
 }
 - (IBAction)clickEqual:(id)sender {
@@ -73,10 +75,11 @@ typedef enum opr Operator;
         case plus :
             [calc add:currentValue];
             currentValue = [calc accumulator];
-        break;
+            break;
         case minus :
             [calc subtract:currentValue];
             currentValue = [calc accumulator];
+            break;
         case multiply :
             [calc multiply:currentValue];
             currentValue = [calc accumulator];
