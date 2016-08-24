@@ -15,6 +15,7 @@
 		CE7C2C531D6D20F6005BC6D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C2C511D6D20F6005BC6D5 /* LaunchScreen.storyboard */; };
 		CE7C2C5E1D6D20F6005BC6D5 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C2C5D1D6D20F6005BC6D5 /* CalculatorTests.m */; };
 		CE7C2C691D6D20F6005BC6D5 /* CalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C2C681D6D20F6005BC6D5 /* CalculatorUITests.m */; };
+		CE7C2C781D6D2C33005BC6D5 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C2C771D6D2C33005BC6D5 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CE7C2C641D6D20F6005BC6D5 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C2C681D6D20F6005BC6D5 /* CalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorUITests.m; sourceTree = "<group>"; };
 		CE7C2C6A1D6D20F6005BC6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7C2C761D6D2C33005BC6D5 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		CE7C2C771D6D2C33005BC6D5 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		CE7C2C421D6D20F6005BC6D5 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C2C761D6D2C33005BC6D5 /* Calculator.h */,
+				CE7C2C771D6D2C33005BC6D5 /* Calculator.m */,
 				CE7C2C461D6D20F6005BC6D5 /* AppDelegate.h */,
 				CE7C2C471D6D20F6005BC6D5 /* AppDelegate.m */,
 				CE7C2C491D6D20F6005BC6D5 /* ViewController.h */,
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7C2C4B1D6D20F6005BC6D5 /* ViewController.m in Sources */,
+				CE7C2C781D6D2C33005BC6D5 /* Calculator.m in Sources */,
 				CE7C2C481D6D20F6005BC6D5 /* AppDelegate.m in Sources */,
 				CE7C2C451D6D20F6005BC6D5 /* main.m in Sources */,
 			);
